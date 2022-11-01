@@ -9,13 +9,13 @@ class TestTranslator(unittest.TestCase):
         self.assertEqual(' ', english_to_french(' '))
 
 
+    def test_hello_english_to_french(self):
+        self.assertEqual("Bonjour", english_to_french('Hello'))    
+    
+
     def test_null_french_to_english(self):
         self.assertEqual(' ', french_to_english(' '))
         
-
-    def test_hello_english_to_french(self):
-        self.assertEqual("Bonjour", english_to_french('Hello'))
-
 
     def test_bonjour_french_to_english(self):
         self.assertEqual('Hello', french_to_english('Bonjour'))
